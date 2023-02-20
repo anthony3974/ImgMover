@@ -115,7 +115,7 @@ public class ImgMover : BaseClass
     private Image imgMain, imgUp;
     private float imgX, imgY, imgWidth, imgHeight;
     private PointF[] poly;
-    private string word;
+    private string word = "";
     private Font font;
 	private int angle;
     #endregion
@@ -373,7 +373,7 @@ public class ImgMover : BaseClass
     /// </summary>
     public string Text
     {
-        get { if (word != null) return word; else return ""; }
+        get { return word; }
     }
     /// <summary>
     /// Gets the angle
