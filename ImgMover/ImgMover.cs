@@ -311,47 +311,67 @@ public class ImgMover : BaseClass
     #endregion
     #region properties
     /// <summary>
-    /// g
+    /// Gets/Sets image
     /// </summary>
     public Image Image
     {
         get { return imgMain; }
         set { imgMain = value; imgUp = imgMain; }
     }
+    /// <summary>
+    /// Gets/Sets x
+    /// </summary>
     public float X
     {
         get { return imgX; }
         set { imgX = value; }
     }
+    /// <summary>
+    /// Gets/Sets y
+    /// </summary>
     public float Y
     {
         get { return imgY; }
         set { imgY = value; }
     }
+    /// <summary>
+    /// Gets/Sets width
+    /// </summary>
     public float Width
     {
         get { return imgWidth; }
         set { imgWidth = value; }
     }
+    /// <summary>
+    /// Gets/Sets height
+    /// </summary>
     public float Height
     {
         get { return imgHeight; }
         set { imgHeight = value; }
     }
+    /// <summary>
+    /// Gets/Sets poly
+    /// </summary>
     public PointF[] Poly
     {
         get { return poly; }
         set { poly = value; }
     }
+    /// <summary>
+    /// Gets an "empty" ImgMover object
+    /// </summary>
     public static ImgMover Empty
     {
         get { return new ImgMover(Color.Transparent, new Rectangle(0, 0, 1, 1)); }
     }
+    /// <summary>
+    /// Gets the text
+    /// </summary>
     public string Text
     {
         get { if (word != null) return word; else return ""; }
     }
     #endregion
 }
-
 
