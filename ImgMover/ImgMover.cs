@@ -117,6 +117,7 @@ public class ImgMover : BaseClass
     private PointF[] poly;
     private string word;
     private Font font;
+	private int angle;
     #endregion
     #region methods
     /// <summary>
@@ -264,6 +265,8 @@ public class ImgMover : BaseClass
     /// <param name="angle">Sets the angle to rotate (from 0)</param>
     public void RotatePic(int angle)
     {
+        // set the base angle
+        this.angle = angle;
         // make a base image
         Image b = new Bitmap(imgUp);
         // create a new empty bitmap to hold the rotated image
@@ -371,6 +374,13 @@ public class ImgMover : BaseClass
     public string Text
     {
         get { if (word != null) return word; else return ""; }
+    }
+    /// <summary>
+    /// Gets the angle
+    /// </summary>
+    public int Angle
+    {
+        get { return angle; }
     }
     #endregion
 }
