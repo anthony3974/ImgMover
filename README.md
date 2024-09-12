@@ -1,4 +1,4 @@
-# ImgMover
+# ImgMover | Class Library
 
 ### For moving images on windows forms (gaming)
 
