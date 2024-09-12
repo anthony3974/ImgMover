@@ -1,5 +1,4 @@
-﻿using BaseClassLibrary;
-using System;
+﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -50,7 +49,7 @@ public enum Way
 /// <summary>
 /// Class for managing Windows Forms Images for games (mostly)
 /// </summary>
-public class ImgMover : BaseClass
+public class ImgMover
 {
     #region class info
     /// <summary>
